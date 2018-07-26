@@ -9,7 +9,7 @@ namespace CSLabs.TimeLib
         public byte Seconds { get; private set; }
 
 
-        public Time(byte hours, byte minutes, byte seconds)
+        public Time(byte hours = 0, byte minutes = 0, byte seconds =0)
         {
             if (hours < 0 || hours > 23) throw new ArgumentOutOfRangeException("Liczba godzin musi byc z przedzialu od 0 do 23");
             if (minutes < 0 || minutes > 59) throw new ArgumentOutOfRangeException("Liczba minut musi byc z przedzialu od 0 do 59");
